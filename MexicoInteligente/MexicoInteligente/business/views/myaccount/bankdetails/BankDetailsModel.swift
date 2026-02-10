@@ -1,0 +1,43 @@
+//
+//  BankDetailsModel.swift
+//  MexicoInteligente
+//
+//  Created by Jorge Espinoza on 30/01/26.
+//
+
+import Foundation
+import SwiftUI
+
+class BankDetailsModel: BaseViewModel {
+    
+    @Published var bloqueoBtn: Bool = true
+    @Published var successCel: Bool = false
+    @Published var beneficiary: String = ""
+    @Published var clabe: String = ""
+    @Published var bank: String = ""
+    @Published var colorBtn: Color = Color(red: 209/255, green: 210/255, blue: 211/255)
+    
+    let limiteCaracteres = 10
+    
+    /*func validateFields() {
+        if userName != "" {
+            if celPhone.count >= limiteCaracteres {
+                celPhone = String(celPhone.prefix(limiteCaracteres))
+                successCel = true
+            } else {
+                successCel = false
+            }
+        } else {
+            print("Concepto vacio")
+            successCel = false
+        }
+        
+        if successCel {
+            bloqueoBtn = false
+            colorBtn = Colors.red
+        } else {
+            bloqueoBtn = true
+            colorBtn = Colors.disableBtn
+        }
+    }*/
+}
