@@ -80,6 +80,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2639C4A12F3B9DC50031B090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		264ECE312F31C5B000A81EE7 /* GenericZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericZStack.swift; sourceTree = "<group>"; };
 		264ECE342F31D13B00A81EE7 /* AdminTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTeamView.swift; sourceTree = "<group>"; };
 		264F3CC22F22D9030054505A /* MexicoInteligente.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MexicoInteligente.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +200,7 @@
 		264F3CC42F22D9030054505A /* MexicoInteligente */ = {
 			isa = PBXGroup;
 			children = (
+				2639C4A12F3B9DC50031B090 /* Info.plist */,
 				264F3CF22F22D9AD0054505A /* business */,
 				264F3CF12F22D99B0054505A /* utils */,
 				264F3CF02F22D9830054505A /* components */,
@@ -785,10 +787,11 @@
 				DEVELOPMENT_TEAM = 4F3L4A69L6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MexicoInteligente/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -813,10 +816,11 @@
 				DEVELOPMENT_TEAM = 4F3L4A69L6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MexicoInteligente/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
