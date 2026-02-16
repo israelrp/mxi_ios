@@ -23,7 +23,7 @@ struct SegmentedCustom: View {
                     VStack {
                         Text(segments[index])
                             .font(.system(size: 14, weight: .regular, design: .default))
-                            .foregroundColor(Color.black)
+                            .foregroundColor(Color.white)
                             //.foregroundStyle(currentPage == index ? .orange : Color(uiColor: .systemGray))
                         ZStack {
                             Capsule()
@@ -31,7 +31,7 @@ struct SegmentedCustom: View {
                                 .frame(height: 4)
                             if currentPage == index {
                                 Capsule()
-                                    .fill(Colors.redTitles)
+                                    .fill(Colors.white)
                                     .frame(width: 80, height: 4)
                                     .matchedGeometryEffect(id: "Tab", in: name)
                             }

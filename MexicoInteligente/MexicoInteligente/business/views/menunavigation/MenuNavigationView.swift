@@ -46,19 +46,19 @@ struct MenuNavigationView: View {
                 //Reemplazar Text por el View
                 Group {
                     
-                    HomeView()
+                    HomeGlassView()
                         .tabItem {
                             Image("home")
                                 .renderingMode(.template)
                             Text("Inicio")
                         }
-                    MyearningsView()
+                    MyearningsGlassView()
                         .tabItem {
                             Image("money")
                                 .renderingMode(.template)
                             Text("Mis ganancias")
                         }
-                    MyAccountView()
+                    MyAccountGlassView()
                         .tabItem {
                             Image("usuario")
                                 .renderingMode(.template)

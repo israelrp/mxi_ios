@@ -27,11 +27,14 @@
 		2659A8CE2F29D58700C99949 /* OperationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2659A8CD2F29D58700C99949 /* OperationRowView.swift */; };
 		267F15782F2827A20052D13F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267F15772F2827A20052D13F /* HomeView.swift */; };
 		267F157A2F282FA80052D13F /* ActionsHomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267F15792F282FA80052D13F /* ActionsHomeItem.swift */; };
+		268229F92F42CCE6003ECBDF /* HomeGlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268229F82F42CCE6003ECBDF /* HomeGlassView.swift */; };
 		268B05902F2BC6010078BB7E /* EarningDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B058F2F2BC6010078BB7E /* EarningDetailView.swift */; };
 		268B05922F2C4F8C0078BB7E /* StepsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B05912F2C4F8C0078BB7E /* StepsItem.swift */; };
 		268FD8C72F29E2E900576667 /* BarProgressStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268FD8C62F29E2E900576667 /* BarProgressStyle.swift */; };
 		269227332F291401001E0A27 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269227322F291401001E0A27 /* MyAccountView.swift */; };
 		269227382F29694C001E0A27 /* MyearningsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269227372F29694C001E0A27 /* MyearningsView.swift */; };
+		269AD7132F42F0C700F9AB87 /* MyAccountGlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269AD7122F42F0C700F9AB87 /* MyAccountGlassView.swift */; };
+		269AD7152F42F40200F9AB87 /* MyearningsGlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269AD7142F42F40200F9AB87 /* MyearningsGlassView.swift */; };
 		269BF9AC2F2CFBE2008F5910 /* BankDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269BF9AB2F2CFBE2008F5910 /* BankDetailsView.swift */; };
 		269BF9AE2F2CFE50008F5910 /* BankDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269BF9AD2F2CFE50008F5910 /* BankDetailsModel.swift */; };
 		269BF9B02F2D0A77008F5910 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269BF9AF2F2D0A77008F5910 /* CheckboxToggleStyle.swift */; };
@@ -104,11 +107,14 @@
 		2659A8CD2F29D58700C99949 /* OperationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationRowView.swift; sourceTree = "<group>"; };
 		267F15772F2827A20052D13F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		267F15792F282FA80052D13F /* ActionsHomeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsHomeItem.swift; sourceTree = "<group>"; };
+		268229F82F42CCE6003ECBDF /* HomeGlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGlassView.swift; sourceTree = "<group>"; };
 		268B058F2F2BC6010078BB7E /* EarningDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningDetailView.swift; sourceTree = "<group>"; };
 		268B05912F2C4F8C0078BB7E /* StepsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsItem.swift; sourceTree = "<group>"; };
 		268FD8C62F29E2E900576667 /* BarProgressStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarProgressStyle.swift; sourceTree = "<group>"; };
 		269227322F291401001E0A27 /* MyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
 		269227372F29694C001E0A27 /* MyearningsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyearningsView.swift; sourceTree = "<group>"; };
+		269AD7122F42F0C700F9AB87 /* MyAccountGlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountGlassView.swift; sourceTree = "<group>"; };
+		269AD7142F42F40200F9AB87 /* MyearningsGlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyearningsGlassView.swift; sourceTree = "<group>"; };
 		269BF9AB2F2CFBE2008F5910 /* BankDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDetailsView.swift; sourceTree = "<group>"; };
 		269BF9AD2F2CFE50008F5910 /* BankDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDetailsModel.swift; sourceTree = "<group>"; };
 		269BF9AF2F2D0A77008F5910 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
@@ -332,6 +338,7 @@
 				26F727A02F319DF200573516 /* realstate */,
 				269BF9AA2F2CFBCC008F5910 /* bankdetails */,
 				269D115B2F2B2D5000CA1E6D /* configuration */,
+				269AD7122F42F0C700F9AB87 /* MyAccountGlassView.swift */,
 			);
 			path = myaccount;
 			sourceTree = "<group>";
@@ -343,6 +350,7 @@
 				2659A8CB2F29CEF000C99949 /* OperationsItem.swift */,
 				2659A8CD2F29D58700C99949 /* OperationRowView.swift */,
 				268B058E2F2BC5ED0078BB7E /* earningdetail */,
+				269AD7142F42F40200F9AB87 /* MyearningsGlassView.swift */,
 			);
 			path = myearnings;
 			sourceTree = "<group>";
@@ -370,6 +378,7 @@
 			children = (
 				267F15772F2827A20052D13F /* HomeView.swift */,
 				267F15792F282FA80052D13F /* ActionsHomeItem.swift */,
+				268229F82F42CCE6003ECBDF /* HomeGlassView.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -576,6 +585,7 @@
 			files = (
 				264F3CFC2F22E9640054505A /* OnboardingView.swift in Sources */,
 				269D115D2F2B2D6700CA1E6D /* ConfigurationView.swift in Sources */,
+				269AD7152F42F40200F9AB87 /* MyearningsGlassView.swift in Sources */,
 				268B05922F2C4F8C0078BB7E /* StepsItem.swift in Sources */,
 				26E464B32F326EBF00E68C9F /* TeamItem.swift in Sources */,
 				26F9F8BB2F23D23800426591 /* BaseViewModel.swift in Sources */,
@@ -602,6 +612,7 @@
 				2659A8CE2F29D58700C99949 /* OperationRowView.swift in Sources */,
 				264F3CFF2F22EAAC0054505A /* Colors.swift in Sources */,
 				26E464B62F32713500E68C9F /* CreateAdvisorView.swift in Sources */,
+				268229F92F42CCE6003ECBDF /* HomeGlassView.swift in Sources */,
 				264ECE352F31D13B00A81EE7 /* AdminTeamView.swift in Sources */,
 				269BF9B62F2D1E74008F5910 /* CustomDialogModifier.swift in Sources */,
 				26E464BA2F327B0F00E68C9F /* AdminTeamViewModel.swift in Sources */,
@@ -610,6 +621,7 @@
 				2659A8CC2F29CEF000C99949 /* OperationsItem.swift in Sources */,
 				269BF9B02F2D0A77008F5910 /* CheckboxToggleStyle.swift in Sources */,
 				264F3CC62F22D9030054505A /* MexicoInteligenteApp.swift in Sources */,
+				269AD7132F42F0C700F9AB87 /* MyAccountGlassView.swift in Sources */,
 				264F3CF72F22DBC20054505A /* Extensions.swift in Sources */,
 				26E464B12F325B0600E68C9F /* TeamRowView.swift in Sources */,
 				269BF9B22F2D0DD5008F5910 /* DropDownPicker.swift in Sources */,
