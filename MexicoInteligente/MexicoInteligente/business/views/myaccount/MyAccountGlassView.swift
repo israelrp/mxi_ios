@@ -20,11 +20,11 @@ struct MyAccountGlassView: View {
         
         ZStack {
             
-            Colors.white.edgesIgnoringSafeArea(.all)
+            //Colors.white.edgesIgnoringSafeArea(.all)
             
-            LinearGradient(gradient: Gradient(colors: [Colors.redTitles, Color.clear]), startPoint: .top, endPoint: .bottom)
+            /*LinearGradient(gradient: Gradient(colors: [Colors.redTitles, Color.clear]), startPoint: .top, endPoint: .bottom)
                 .frame(height: 700)
-                .edgesIgnoringSafeArea(.all)
+                .edgesIgnoringSafeArea(.all)*/
             
             ScrollView {
                 
@@ -38,25 +38,25 @@ struct MyAccountGlassView: View {
                             .resizable()
                             .scaledToFill()
                             .frame(width: 100, height: 100, alignment: .center)
-                            .foregroundStyle(Colors.white)
+                            .foregroundStyle(Colors.redTitles)
                             .padding([.top, .bottom], 8)
                         
                         Text("Jorge Alberto")
                             .frame(maxWidth: .infinity, alignment: .center)
                             .font(.system(size: 18, weight: .semibold, design: .default))
-                            .foregroundColor(Colors.white)
+                            .foregroundColor(Color.black)
                             .multilineTextAlignment(.trailing)
                         
                         Text("Asesor")
                             .frame(maxWidth: .infinity, alignment: .center)
                             .font(.system(size: 16, weight: .regular, design: .default))
-                            .foregroundColor(Colors.white)
+                            .foregroundColor(Color.black)
                             .multilineTextAlignment(.leading)
                         
                         Text("Configuración")
                             .frame(alignment: .leading)
                             .font(.system(size: 16, weight: .semibold, design: .default))
-                            .foregroundColor(Colors.white)
+                            .foregroundColor(Color.black)
                             .multilineTextAlignment(.center)
                             .underline()
                             .padding(.bottom, 24)
@@ -66,14 +66,18 @@ struct MyAccountGlassView: View {
                             }
                         
                     }
-                    .frame(maxWidth: .infinity)
+                    .frame(width: .infinity)
+                    .background(Color.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                    .shadow(color: Color(red: 150/255, green: 150/255, blue: 150/255, opacity: 0.5), radius: 10, x: 1, y: 1)
+                    /*.frame(maxWidth: .infinity)
                     .background(.ultraThinMaterial) // Creates the glass effect
                     .cornerRadius(15)
                     .overlay(
                         RoundedRectangle(cornerRadius: 15)
                             .stroke(Color.white.opacity(0.5), lineWidth: 1)
                     )
-                    .shadow(color: Color.black.opacity(0.4), radius: 10, x: 0, y: 5)
+                    .shadow(color: Color.black.opacity(0.4), radius: 10, x: 0, y: 5)*/
                     
                     //Second card
                     VStack {
@@ -111,10 +115,10 @@ struct MyAccountGlassView: View {
                         Spacer()
                         
                     }
-                    .frame(maxWidth: .infinity)
+                    .frame(width: .infinity)
                     .background(Color.white)
-                    .clipShape(RoundedRectangle(cornerRadius: 15))
-                    .shadow(color: Color(red: 150/255, green: 150/255, blue: 150/255, opacity: 0.3), radius: 5, x: 1, y: 1)
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                    .shadow(color: Color(red: 150/255, green: 150/255, blue: 150/255, opacity: 0.5), radius: 10, x: 1, y: 1)
                     .padding(.top, 16)
                     
                 }
@@ -147,7 +151,7 @@ struct MyAccountGlassView: View {
             }
             
         }//End ZStack
-        .background(Colors.white)
+        .background(Colors.white.opacity(0.7))
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
         

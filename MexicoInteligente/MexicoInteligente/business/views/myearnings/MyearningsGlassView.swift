@@ -34,11 +34,11 @@ struct MyearningsGlassView: View {
         
         ZStack {
             
-            Colors.white.edgesIgnoringSafeArea(.all)
+            //Colors.white.edgesIgnoringSafeArea(.all)
             
-            LinearGradient(gradient: Gradient(colors: [Colors.redTitles, Color.clear]), startPoint: .top, endPoint: .bottom)
+            /*LinearGradient(gradient: Gradient(colors: [Colors.redTitles, Color.clear]), startPoint: .top, endPoint: .bottom)
                 .frame(height: 700)
-                .edgesIgnoringSafeArea(.all)
+                .edgesIgnoringSafeArea(.all)*/
             
             VStack {
                 
@@ -87,7 +87,7 @@ struct MyearningsGlassView: View {
                 Text("\(typeSelected)")
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .font(.system(size: 20, weight: .semibold, design: .default))
-                    .foregroundColor(Colors.white)
+                    .foregroundColor(Color.black)
                     .padding(.top, 24)
                 
                 //Lista de movimientos

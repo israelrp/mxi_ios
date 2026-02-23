@@ -18,11 +18,11 @@ struct HomeGlassView: View {
         
         ZStack(alignment: .top) {
             
-            Colors.white.edgesIgnoringSafeArea(.all)
+            //Colors.white.edgesIgnoringSafeArea(.all)
             
-            LinearGradient(gradient: Gradient(colors: [Colors.redTitles, Color.clear]), startPoint: .top, endPoint: .bottom)
+            /*LinearGradient(gradient: Gradient(colors: [Colors.redTitles, Color.clear]), startPoint: .top, endPoint: .bottom)
                 .frame(height: 700)
-                .edgesIgnoringSafeArea(.all)
+                .edgesIgnoringSafeArea(.all)*/
             
             ScrollView {
                 
@@ -31,7 +31,7 @@ struct HomeGlassView: View {
                     Text("¡Bienvenido!")
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .font(.system(size: 22, weight: .semibold, design: .default))
-                        .foregroundColor(Colors.white)
+                        .foregroundColor(Color.black)
                         .padding([.trailing, .leading, .top], 24)
                     
                     HStack(spacing: 10) {
@@ -43,25 +43,29 @@ struct HomeGlassView: View {
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 30, height: 30, alignment: .center)
-                                .foregroundStyle(Colors.white)
+                                .foregroundStyle(Colors.redTitles)
                                 .padding([.top], 16)
                             
                             Text("Expediente")
                                 .frame(maxWidth: .infinity)
                                 .multilineTextAlignment(.center)
                                 .font(.system(size: 13, weight: .bold, design: .default))
-                                .foregroundStyle(Colors.white)
+                                .foregroundStyle(Colors.redTitles)
                                 .padding([.bottom], 16)
                                 .padding([.top], 4)
                         }
-                        .frame(maxWidth: .infinity)
+                        .frame(width: .infinity)
+                        .background(Color.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                        .shadow(color: Color(red: 150/255, green: 150/255, blue: 150/255, opacity: 0.5), radius: 10, x: 1, y: 1)
+                        /*.frame(maxWidth: .infinity)
                         .background(.ultraThinMaterial) // Creates the glass effect
                         .cornerRadius(10)
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.white.opacity(0.5), lineWidth: 1)
                         )
-                        .shadow(color: Color.black.opacity(0.4), radius: 10, x: 0, y: 5)
+                        .shadow(color: Color.black.opacity(0.4), radius: 10, x: 0, y: 5)*/
                         
                         VStack {
                             
@@ -70,25 +74,29 @@ struct HomeGlassView: View {
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 30, height: 30, alignment: .center)
-                                .foregroundStyle(Colors.white)
+                                .foregroundStyle(Colors.redTitles)
                                 .padding([.top], 16)
                             
                             Text("Investigación")
                                 .frame(maxWidth: .infinity)
                                 .multilineTextAlignment(.center)
                                 .font(.system(size: 13, weight: .bold, design: .default))
-                                .foregroundStyle(Colors.white)
+                                .foregroundStyle(Colors.redTitles)
                                 .padding([.bottom], 16)
                                 .padding([.top], 4)
                         }
-                        .frame(maxWidth: .infinity)
+                        .frame(width: .infinity)
+                        .background(Color.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                        .shadow(color: Color(red: 150/255, green: 150/255, blue: 150/255, opacity: 0.5), radius: 10, x: 1, y: 1)
+                        /*.frame(maxWidth: .infinity)
                         .background(.ultraThinMaterial) // Creates the glass effect
                         .cornerRadius(10)
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.white.opacity(0.5), lineWidth: 1)
                         )
-                        .shadow(color: Color.black.opacity(0.4), radius: 10, x: 0, y: 5)
+                        .shadow(color: Color.black.opacity(0.4), radius: 10, x: 0, y: 5)*/
                         
                     }
                     .padding([.trailing, .leading], 24)
@@ -101,18 +109,24 @@ struct HomeGlassView: View {
                             .resizable()
                             .scaledToFill()
                             .frame(width: 30, height: 30, alignment: .center)
-                            .foregroundStyle(Colors.white)
+                            .foregroundStyle(Colors.redTitles)
                             .padding([.top], 16)
                         
                         Text("Venta de polizas")
                             .frame(maxWidth: .infinity)
                             .multilineTextAlignment(.center)
                             .font(.system(size: 13, weight: .bold, design: .default))
-                            .foregroundStyle(Colors.white)
+                            .foregroundStyle(Colors.redTitles)
                             .padding([.bottom], 16)
                             .padding([.top], 4)
                     }
-                    .frame(maxWidth: .infinity)
+                    .frame(width: .infinity)
+                    .background(Color.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                    .shadow(color: Color(red: 150/255, green: 150/255, blue: 150/255, opacity: 0.5), radius: 10, x: 1, y: 1)
+                    .padding([.leading, .trailing], 24)
+                    .padding(.top, 8)
+                    /*.frame(maxWidth: .infinity)
                     .background(.ultraThinMaterial) // Creates the glass effect
                     .cornerRadius(10)
                     .overlay(
@@ -121,13 +135,13 @@ struct HomeGlassView: View {
                     )
                     .shadow(color: Color.black.opacity(0.4), radius: 10, x: 0, y: 5)
                     .padding([.leading, .trailing], 24)
-                    .padding(.top, 8)
+                    .padding(.top, 8)*/
                     
                     //Resumen de operaciones
                     Text("Resumen de operaciones")
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .font(.system(size: 16, weight: .semibold, design: .default))
-                        .foregroundColor(Colors.white)
+                        .foregroundColor(Color.black)
                         .padding([.leading, .trailing], 24)
                         .padding(.top, 16)
                     
@@ -206,6 +220,7 @@ struct HomeGlassView: View {
             
         }//End ZStack
         //.background(Colors.redTitles.opacity(0.7))
+        .background(Colors.white.opacity(0.7))
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
         
