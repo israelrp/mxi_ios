@@ -32,39 +32,84 @@ struct OperationRowView: View {
                 case .Vigente:
                     StatusOpeView(image: "comprobado", title: operation.operationalStatus.rawValue, textColor: Colors.greenVigenteText, backGroundColor: Colors.greenVigente)
                 }
+                
+                Spacer()
+                
+                Button(action: {
+                    print("Button tapped!")
+                }) {
+                    Image("editar")
+                        .resizable() // Makes the image resizable
+                        .frame(width: 20, height: 20) // Sets a specific size
+                }
+                .buttonStyle(PlainButtonStyle())
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                .padding(.trailing, 8)
+                
+                Spacer()
             }
-            .frame(maxWidth: .infinity)
             .padding([.top, .bottom], 8)
             
-            StepsView()
+            /*StepsView()
             
             ProgressView(value: Double(operation.step), total: 7)
                 .progressViewStyle(BarProgressStyle(height: 10.0))
-                .padding([.leading, .trailing], 16)
+                .padding([.leading, .trailing], 16)*/
             
-            if operation.typeOpe == .Activa {
-                InfoView(image: "identificador", title: "ID", value: operation.operationsId)
-            } else {
-                InfoView(image: "identificador", title: "ID / Contrato", value: "\(operation.operationsId) / \(operation.contract)")
+            HStack {
+                
+                VStack {
+                    
+                    if operation.typeOpe == .Activa {
+                        InfoView(image: "identificador", title: "ID", value: operation.operationsId)
+                    } else {
+                        InfoView(image: "identificador", title: "ID / Contrato", value: "\(operation.operationsId) / \(operation.contract)")
+                    }
+                    
+                    InfoView(image: "home", title: "Dirección", value: operation.address)
+                    
+                    if operation.typeOpe == .Cerrada {
+                        InfoView(image: "propietario", title: "Propietario", value: operation.tenant)
+                    }
+                    
+                    InfoView(image: "inquilino", title: "Inquilino", value: operation.tenant)
+                    
+                    if operation.status == .Disponible {
+                        InfoView(image: "comprobado", title: "Contratos", value: operation.status.rawValue)
+                    } else {
+                        InfoView(image: "alerta", title: "Perfil de inquilino", value: operation.status.rawValue)
+                    }
+                    
+                    if operation.typeOpe == .Cerrada {
+                        InfoView(image: "recargar", title: "Fecha de renovación", value: operation.dateRenovation)
+                    }
+                    
+                }
+                
+                VStack{
+                    
+                    Text("Pasos completados")
+                        .multilineTextAlignment(.leading)
+                        .font(.system(size: 14, weight: .medium, design: .default))
+                        .padding(.bottom, 4)
+                        .foregroundStyle(Color.black)
+                    
+                    ZStack {
+                        let step = Double(operation.step) / Double(7)
+                        CircularProgressView(progress: step)
+                        
+                        Text("\(operation.step)/7")
+                            .font(.system(size: 20, weight: .semibold, design: .default))
+                            .foregroundColor(Color.black)
+                            .multilineTextAlignment(.center)
+                    }.frame(width: 80, height: 80)
+                    
+                }
+                
             }
+            .frame(maxWidth: .infinity)
+            .padding(.trailing, 16)
             
-            InfoView(image: "home", title: "Dirección", value: operation.address)
-            
-            if operation.typeOpe == .Cerrada {
-                InfoView(image: "propietario", title: "Propietario", value: operation.tenant)
-            }
-            
-            InfoView(image: "inquilino", title: "Inquilino", value: operation.tenant)
-            
-            if operation.status == .Disponible {
-                InfoView(image: "comprobado", title: "Contratos", value: operation.status.rawValue)
-            } else {
-                InfoView(image: "alerta", title: "Perfil de inquilino", value: operation.status.rawValue)
-            }
-            
-            if operation.typeOpe == .Cerrada {
-                InfoView(image: "recargar", title: "Fecha de renovación", value: operation.dateRenovation)
-            }
             
             Text("Ver expediente")
                 .frame(alignment: .leading)
@@ -91,11 +136,11 @@ struct OperationRowView: View {
     func StatusOpeView(image: String, title: String, textColor: Color, backGroundColor: Color) -> some View {
         
         HStack(alignment: .center) {
-            Image(image)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 16, height: 16, alignment: .center)
-                .padding([.top, .bottom], 4)
+            /*Image(image)
+             .resizable()
+             .scaledToFill()
+             .frame(width: 16, height: 16, alignment: .center)
+             .padding([.top, .bottom], 4)*/
             
             Text(title)
                 .multilineTextAlignment(.leading)
@@ -103,11 +148,11 @@ struct OperationRowView: View {
                 .padding([.top, .bottom], 4)
                 .foregroundStyle(textColor)
         }
-        .frame(maxWidth: .infinity)
+        .frame(width: 100)
         .background(backGroundColor)
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .padding([.top, .bottom], 4)
-        .padding([.leading, .trailing], 16)
+        .padding([.leading], 8)
         
     }
     
@@ -129,11 +174,11 @@ struct OperationRowView: View {
             
             Spacer()
             
-            Text("Editar")
-                .multilineTextAlignment(.leading)
-                .font(.system(size: 12, weight: .semibold, design: .default))
-                .padding(.bottom, 4)
-                .foregroundStyle(Colors.redTitles)
+            /*Text("Editar")
+             .multilineTextAlignment(.leading)
+             .font(.system(size: 12, weight: .semibold, design: .default))
+             .padding(.bottom, 4)
+             .foregroundStyle(Colors.redTitles)*/
         }
         .frame(maxWidth: .infinity)
         .padding([.leading, .trailing], 16)
@@ -157,20 +202,20 @@ struct InfoView: View {
                 .scaledToFill()
                 .frame(width: 20, height: 20, alignment: .center)
                 .foregroundStyle(Colors.redTitles)
-                //.padding(.leading, 8)
+            //.padding(.leading, 8)
             
             VStack(alignment: .leading) {
                 Text(title)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .multilineTextAlignment(.leading)
                     .font(.system(size: 13, weight: .medium, design: .default))
-                    .padding(.leading, 4)
+                    .padding(.leading, 1)
                 
                 Text(value)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .multilineTextAlignment(.leading)
                     .font(.system(size: 13, weight: .regular, design: .default))
-                    .padding(.leading, 4)
+                    .padding(.leading, 1)
                     .foregroundColor(Colors.graySms)
             }
             
@@ -178,7 +223,7 @@ struct InfoView: View {
             
         }
         .frame(maxWidth: .infinity, minHeight: 35)
-        .padding([.leading, .trailing], 24)
+        .padding([.leading], 12)
         .padding(.bottom, 2)
         
     }//End body

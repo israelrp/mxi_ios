@@ -54,6 +54,7 @@
 		26E464BA2F327B0F00E68C9F /* AdminTeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E464B92F327B0F00E68C9F /* AdminTeamViewModel.swift */; };
 		26E464BC2F327BB700E68C9F /* RealStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E464BB2F327BB700E68C9F /* RealStateViewModel.swift */; };
 		26E464BE2F328A5E00E68C9F /* TermsConditionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E464BD2F328A5E00E68C9F /* TermsConditionsViewModel.swift */; };
+		26E76FF82F4D63CD00D53D40 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E76FF72F4D63CC00D53D40 /* CircularProgressView.swift */; };
 		26F727A22F319E0900573516 /* RealStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F727A12F319E0900573516 /* RealStateView.swift */; };
 		26F727A52F31B53A00573516 /* TermsConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F727A42F31B53A00573516 /* TermsConditionsView.swift */; };
 		26F9F8B72F23CD5200426591 /* UserDefaultsPref.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9F8B62F23CD5200426591 /* UserDefaultsPref.swift */; };
@@ -134,6 +135,7 @@
 		26E464B92F327B0F00E68C9F /* AdminTeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTeamViewModel.swift; sourceTree = "<group>"; };
 		26E464BB2F327BB700E68C9F /* RealStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealStateViewModel.swift; sourceTree = "<group>"; };
 		26E464BD2F328A5E00E68C9F /* TermsConditionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsConditionsViewModel.swift; sourceTree = "<group>"; };
+		26E76FF72F4D63CC00D53D40 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		26F727A12F319E0900573516 /* RealStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealStateView.swift; sourceTree = "<group>"; };
 		26F727A42F31B53A00573516 /* TermsConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsConditionsView.swift; sourceTree = "<group>"; };
 		26F9F8B62F23CD5200426591 /* UserDefaultsPref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsPref.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 				269BF9B52F2D1E74008F5910 /* CustomDialogModifier.swift */,
 				264ECE312F31C5B000A81EE7 /* GenericZStack.swift */,
 				26E464B72F3277B400E68C9F /* GenericBtn.swift */,
+				26E76FF72F4D63CC00D53D40 /* CircularProgressView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -590,6 +593,7 @@
 				26E464B32F326EBF00E68C9F /* TeamItem.swift in Sources */,
 				26F9F8BB2F23D23800426591 /* BaseViewModel.swift in Sources */,
 				269BF9AE2F2CFE50008F5910 /* BankDetailsModel.swift in Sources */,
+				26E76FF82F4D63CD00D53D40 /* CircularProgressView.swift in Sources */,
 				26F9F8BD2F23D38900426591 /* Reachability.swift in Sources */,
 				26A79A5A2F27D9C300BE6C70 /* MenuNavigationView.swift in Sources */,
 				264F3D012F22EE090054505A /* OnboardingItem.swift in Sources */,
