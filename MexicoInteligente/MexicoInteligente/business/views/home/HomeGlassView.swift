@@ -34,7 +34,7 @@ struct HomeGlassView: View {
                         .foregroundColor(Color.black)
                         .padding([.trailing, .leading, .top], 24)
                     
-                    HStack(spacing: 10) {
+                    /*HStack(spacing: 10) {
                         
                         VStack {
                             
@@ -100,7 +100,7 @@ struct HomeGlassView: View {
                         
                     }
                     .padding([.trailing, .leading], 24)
-                    .padding(.top, 8)
+                    .padding(.top, 8)*/
                     
                     VStack {
                         

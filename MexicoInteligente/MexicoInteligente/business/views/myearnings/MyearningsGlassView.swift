@@ -84,11 +84,11 @@ struct MyearningsGlassView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 12))
                 .shadow(color: Color(red: 150/255, green: 150/255, blue: 150/255, opacity: 0.7), radius: 5, x: 0, y: 0)
                 
-                Text("\(typeSelected)")
+                /*Text("\(typeSelected)")
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .font(.system(size: 20, weight: .semibold, design: .default))
                     .foregroundColor(Color.black)
-                    .padding(.top, 24)
+                    .padding(.top, 24)*/
                 
                 //Lista de movimientos
                 List(filteredOperationsList, id: \.id) { operation in

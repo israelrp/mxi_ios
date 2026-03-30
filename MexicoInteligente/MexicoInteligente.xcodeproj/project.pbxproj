@@ -46,6 +46,7 @@
 		269D11612F2B3AC300CA1E6D /* GenericSmsTxt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D11602F2B3AC300CA1E6D /* GenericSmsTxt.swift */; };
 		269D11632F2B3AFE00CA1E6D /* GenericTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D11622F2B3AFE00CA1E6D /* GenericTxtField.swift */; };
 		26A79A5A2F27D9C300BE6C70 /* MenuNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A79A592F27D9C200BE6C70 /* MenuNavigationView.swift */; };
+		26AA63BE2F4E1FB400125588 /* GenericBtnSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA63BD2F4E1FB400125588 /* GenericBtnSmall.swift */; };
 		26C8C6C62F31B98500403881 /* PDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C8C6C12F31B90100403881 /* PDFKit.framework */; };
 		26E464B12F325B0600E68C9F /* TeamRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E464B02F325B0600E68C9F /* TeamRowView.swift */; };
 		26E464B32F326EBF00E68C9F /* TeamItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E464B22F326EBF00E68C9F /* TeamItem.swift */; };
@@ -127,6 +128,7 @@
 		269D11602F2B3AC300CA1E6D /* GenericSmsTxt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSmsTxt.swift; sourceTree = "<group>"; };
 		269D11622F2B3AFE00CA1E6D /* GenericTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTxtField.swift; sourceTree = "<group>"; };
 		26A79A592F27D9C200BE6C70 /* MenuNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuNavigationView.swift; sourceTree = "<group>"; };
+		26AA63BD2F4E1FB400125588 /* GenericBtnSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericBtnSmall.swift; sourceTree = "<group>"; };
 		26C8C6C12F31B90100403881 /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = System/Library/Frameworks/PDFKit.framework; sourceTree = SDKROOT; };
 		26E464B02F325B0600E68C9F /* TeamRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRowView.swift; sourceTree = "<group>"; };
 		26E464B22F326EBF00E68C9F /* TeamItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamItem.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 				264ECE312F31C5B000A81EE7 /* GenericZStack.swift */,
 				26E464B72F3277B400E68C9F /* GenericBtn.swift */,
 				26E76FF72F4D63CC00D53D40 /* CircularProgressView.swift */,
+				26AA63BD2F4E1FB400125588 /* GenericBtnSmall.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -591,6 +594,7 @@
 				269AD7152F42F40200F9AB87 /* MyearningsGlassView.swift in Sources */,
 				268B05922F2C4F8C0078BB7E /* StepsItem.swift in Sources */,
 				26E464B32F326EBF00E68C9F /* TeamItem.swift in Sources */,
+				26AA63BE2F4E1FB400125588 /* GenericBtnSmall.swift in Sources */,
 				26F9F8BB2F23D23800426591 /* BaseViewModel.swift in Sources */,
 				269BF9AE2F2CFE50008F5910 /* BankDetailsModel.swift in Sources */,
 				26E76FF82F4D63CD00D53D40 /* CircularProgressView.swift in Sources */,
@@ -800,7 +804,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MexicoInteligente/Preview Content\"";
-				DEVELOPMENT_TEAM = 4F3L4A69L6;
+				DEVELOPMENT_TEAM = LNN2JT7KPX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MexicoInteligente/Info.plist;
@@ -829,7 +833,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MexicoInteligente/Preview Content\"";
-				DEVELOPMENT_TEAM = 4F3L4A69L6;
+				DEVELOPMENT_TEAM = LNN2JT7KPX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MexicoInteligente/Info.plist;

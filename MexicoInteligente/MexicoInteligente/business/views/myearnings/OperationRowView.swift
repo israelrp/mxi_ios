@@ -110,8 +110,13 @@ struct OperationRowView: View {
             .frame(maxWidth: .infinity)
             .padding(.trailing, 16)
             
-            
-            Text("Ver expediente")
+            GenericBtnSmall(name: "Ver expediente") {
+                root.path.append(Routes.EarningDetail(step: operation.step))
+            }
+            .buttonStyle(PlainButtonStyle())
+            .padding(.bottom, 24)
+            .padding(.top, 8)
+            /*Text("Ver expediente")
                 .frame(alignment: .leading)
                 .font(.system(size: 14, weight: .semibold, design: .default))
                 .foregroundColor(Colors.redTitles)
@@ -121,8 +126,8 @@ struct OperationRowView: View {
                 .padding(.top, 8)
                 .onTapGesture {
                     // Action to perform when the label is tapped
-                    root.path.append(Routes.EarningDetail(step: operation.step))
-                }
+                    
+                }*/
             
         }//End VStack
         .frame(maxWidth: .infinity)

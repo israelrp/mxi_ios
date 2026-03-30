@@ -54,7 +54,7 @@ struct MenuNavigationView: View {
                         }
                     MyearningsGlassView()
                         .tabItem {
-                            Image("money")
+                            Image("money2")
                                 .renderingMode(.template)
                             Text("Mis ganancias")
                         }
