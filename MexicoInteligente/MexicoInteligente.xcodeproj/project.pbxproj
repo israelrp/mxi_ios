@@ -65,6 +65,13 @@
 		26F9F8C12F23E13000426591 /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9F8C02F23E13000426591 /* PhoneNumberView.swift */; };
 		26FA8FE22F24105800D0B646 /* PhoneNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FA8FE12F24105800D0B646 /* PhoneNumberViewModel.swift */; };
 		26FA8FE52F24185F00D0B646 /* EnterCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FA8FE42F24185F00D0B646 /* EnterCodeView.swift */; };
+		D7CD53432F7B259100FF4CDC /* StepOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CD53422F7B258900FF4CDC /* StepOneView.swift */; };
+		D7CD53452F7B39DE00FF4CDC /* StepIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CD53442F7B39D800FF4CDC /* StepIndicatorView.swift */; };
+		D7CD53472F7B45AE00FF4CDC /* StepTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CD53462F7B45A500FF4CDC /* StepTwoView.swift */; };
+		D7CD53492F7C156D00FF4CDC /* StepThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CD53482F7C156300FF4CDC /* StepThreeView.swift */; };
+		D7CD534B2F7C207E00FF4CDC /* StepFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CD534A2F7C207900FF4CDC /* StepFourView.swift */; };
+		D7CD534D2F7C49C800FF4CDC /* StepFiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CD534C2F7C49C100FF4CDC /* StepFiveView.swift */; };
+		D7CD534F2F7C523400FF4CDC /* StepSixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CD534E2F7C522800FF4CDC /* StepSixView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +154,13 @@
 		26F9F8C02F23E13000426591 /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
 		26FA8FE12F24105800D0B646 /* PhoneNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewModel.swift; sourceTree = "<group>"; };
 		26FA8FE42F24185F00D0B646 /* EnterCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCodeView.swift; sourceTree = "<group>"; };
+		D7CD53422F7B258900FF4CDC /* StepOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepOneView.swift; sourceTree = "<group>"; };
+		D7CD53442F7B39D800FF4CDC /* StepIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepIndicatorView.swift; sourceTree = "<group>"; };
+		D7CD53462F7B45A500FF4CDC /* StepTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTwoView.swift; sourceTree = "<group>"; };
+		D7CD53482F7C156300FF4CDC /* StepThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepThreeView.swift; sourceTree = "<group>"; };
+		D7CD534A2F7C207900FF4CDC /* StepFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepFourView.swift; sourceTree = "<group>"; };
+		D7CD534C2F7C49C100FF4CDC /* StepFiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepFiveView.swift; sourceTree = "<group>"; };
+		D7CD534E2F7C522800FF4CDC /* StepSixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepSixView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +273,7 @@
 		264F3CF02F22D9830054505A /* components */ = {
 			isa = PBXGroup;
 			children = (
+				D7CD53442F7B39D800FF4CDC /* StepIndicatorView.swift */,
 				2659A8C92F29B00600C99949 /* SegmentedCustom.swift */,
 				268FD8C62F29E2E900576667 /* BarProgressStyle.swift */,
 				269D11602F2B3AC300CA1E6D /* GenericSmsTxt.swift */,
@@ -299,6 +314,7 @@
 		264F3CF32F22D9C60054505A /* views */ = {
 			isa = PBXGroup;
 			children = (
+				D7CD53412F7B258100FF4CDC /* steps */,
 				26F9F8BE2F23DCEF00426591 /* enrolment */,
 				26A79A572F27C54600BE6C70 /* home */,
 				269227362F296935001E0A27 /* myearnings */,
@@ -459,6 +475,19 @@
 			path = entercode;
 			sourceTree = "<group>";
 		};
+		D7CD53412F7B258100FF4CDC /* steps */ = {
+			isa = PBXGroup;
+			children = (
+				D7CD534E2F7C522800FF4CDC /* StepSixView.swift */,
+				D7CD534C2F7C49C100FF4CDC /* StepFiveView.swift */,
+				D7CD534A2F7C207900FF4CDC /* StepFourView.swift */,
+				D7CD53482F7C156300FF4CDC /* StepThreeView.swift */,
+				D7CD53462F7B45A500FF4CDC /* StepTwoView.swift */,
+				D7CD53422F7B258900FF4CDC /* StepOneView.swift */,
+			);
+			path = steps;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -593,7 +622,9 @@
 				269D115D2F2B2D6700CA1E6D /* ConfigurationView.swift in Sources */,
 				269AD7152F42F40200F9AB87 /* MyearningsGlassView.swift in Sources */,
 				268B05922F2C4F8C0078BB7E /* StepsItem.swift in Sources */,
+				D7CD53432F7B259100FF4CDC /* StepOneView.swift in Sources */,
 				26E464B32F326EBF00E68C9F /* TeamItem.swift in Sources */,
+				D7CD534D2F7C49C800FF4CDC /* StepFiveView.swift in Sources */,
 				26AA63BE2F4E1FB400125588 /* GenericBtnSmall.swift in Sources */,
 				26F9F8BB2F23D23800426591 /* BaseViewModel.swift in Sources */,
 				269BF9AE2F2CFE50008F5910 /* BankDetailsModel.swift in Sources */,
@@ -601,6 +632,7 @@
 				26F9F8BD2F23D38900426591 /* Reachability.swift in Sources */,
 				26A79A5A2F27D9C300BE6C70 /* MenuNavigationView.swift in Sources */,
 				264F3D012F22EE090054505A /* OnboardingItem.swift in Sources */,
+				D7CD53492F7C156D00FF4CDC /* StepThreeView.swift in Sources */,
 				26F727A52F31B53A00573516 /* TermsConditionsView.swift in Sources */,
 				267F15782F2827A20052D13F /* HomeView.swift in Sources */,
 				2659A8CA2F29B00600C99949 /* SegmentedCustom.swift in Sources */,
@@ -634,10 +666,14 @@
 				26E464B12F325B0600E68C9F /* TeamRowView.swift in Sources */,
 				269BF9B22F2D0DD5008F5910 /* DropDownPicker.swift in Sources */,
 				264ECE322F31C5B000A81EE7 /* GenericZStack.swift in Sources */,
+				D7CD53472F7B45AE00FF4CDC /* StepTwoView.swift in Sources */,
+				D7CD53452F7B39DE00FF4CDC /* StepIndicatorView.swift in Sources */,
 				268FD8C72F29E2E900576667 /* BarProgressStyle.swift in Sources */,
+				D7CD534B2F7C207E00FF4CDC /* StepFourView.swift in Sources */,
 				269227332F291401001E0A27 /* MyAccountView.swift in Sources */,
 				26E464B82F3277B400E68C9F /* GenericBtn.swift in Sources */,
 				26E464BC2F327BB700E68C9F /* RealStateViewModel.swift in Sources */,
+				D7CD534F2F7C523400FF4CDC /* StepSixView.swift in Sources */,
 				26F9F8C12F23E13000426591 /* PhoneNumberView.swift in Sources */,
 				268B05902F2BC6010078BB7E /* EarningDetailView.swift in Sources */,
 				26FA8FE52F24185F00D0B646 /* EnterCodeView.swift in Sources */,

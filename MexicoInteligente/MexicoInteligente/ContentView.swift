@@ -42,6 +42,18 @@ struct ContentView: View {
                     AdminTeamView()
                 case .CreateAdvisor:
                     CreateAdvisorView()
+                case .StepOne:
+                    StepOneView()
+                case .StepTwo:
+                    StepTwoView()
+                case .StepThree:
+                    StepThreeView()
+                case .StepFour:
+                    StepFourView()
+                case .StepFive:
+                    StepFiveView()
+                case .StepSix:
+                    StepSixView()
                 }
             }
             .onAppear() {

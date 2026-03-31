@@ -29,4 +29,10 @@ enum Routes: Hashable {
     case TermsConditions
     case AdminTeam
     case CreateAdvisor
+    case StepOne
+    case StepTwo
+    case StepThree
+    case StepFour
+    case StepFive
+    case StepSix
 }

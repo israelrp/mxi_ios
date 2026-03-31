@@ -35,6 +35,7 @@ public enum Colors {
     
     static let yellowHab: Color = Color(red: 250/255, green: 250/255, blue: 172/255)
     static let yellowHabText: Color = Color(red: 252/255, green: 242/255, blue: 61/255)
+    static let yellow: Color = Color(red: 99/255, green: 63/255, blue: 29/255)
     
     static let grayClear: Color = Color(red: 193/255, green: 193/255, blue: 193/255)
     

@@ -40,3 +40,32 @@ struct GenericZStack<Content: View>: View {
         
     }//End body
 }
+
+struct GenericZStackWithoutBack<Content: View>: View {
+    
+    @EnvironmentObject var root : Navigation
+    let titleToolbar: String
+    let content: () -> Content
+    
+    init(titleToolbar: String = "", @ViewBuilder content: @escaping () -> Content) {
+        self.titleToolbar = titleToolbar
+        self.content = content
+    }
+    
+    var body: some View {
+        
+        ZStack {
+            content()
+        }//End ZStack
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Colors.white)
+        .navigationBarTitle(titleToolbar)
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
+        .onTapGesture {
+            print("Tocando otra parte")
+            self.hideKeyboard()
+        }
+        
+    }//End body
+}

@@ -120,12 +120,15 @@ struct HomeGlassView: View {
                             .padding([.bottom], 16)
                             .padding([.top], 4)
                     }
-                    .frame(width: .infinity)
+                    .frame(maxWidth: .infinity)
                     .background(Color.white)
                     .clipShape(RoundedRectangle(cornerRadius: 12))
                     .shadow(color: Color(red: 150/255, green: 150/255, blue: 150/255, opacity: 0.5), radius: 10, x: 1, y: 1)
                     .padding([.leading, .trailing], 24)
                     .padding(.top, 8)
+                    .onTapGesture {
+                        root.path.append(Routes.StepOne)
+                    }
                     /*.frame(maxWidth: .infinity)
                     .background(.ultraThinMaterial) // Creates the glass effect
                     .cornerRadius(10)
